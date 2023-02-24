@@ -27,11 +27,7 @@ body{
     animation:loading 0.75s ease 6;
 
 }
-.loader::after{
- content:"";
- z-index:-1;
 
-}
 @keyframes loading{
     0%{
         transform:rotate(0turn);
