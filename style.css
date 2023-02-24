@@ -15,7 +15,9 @@ body{
     align-items: center;
     justify-content: center;
     background:#333333;
-    z-index: 9999999;
+    z-index: 9999;
+   animation:loading 4s ease ;
+   transform: translate(-100vw,-100vh);
 }
 .loader::before{
     content:"";
@@ -24,16 +26,19 @@ body{
     border:15px solid #dddddd;
     border-top-color:#009578;
     border-radius: 50%;
-    animation:loading 0.75s ease 6;
-
+    animation:loading 4s ease ;
+    
 }
 
 @keyframes loading{
     0%{
         transform:rotate(0turn);
     }
-    100%{
+    60%{
         transform:rotate(1turn); 
+    }
+    100%{
+        transform: rotate(0turn);
     }
 }
 /* Mobile responsive mode*/
@@ -317,14 +322,16 @@ body{
         gap:70%;
     }
     .fa-heart{
-        color:black;
+        color:rgba(231, 103, 231, 0.605);
         font-size:24px;
-        
     }
     .fa-heart:hover{
-        background-color:pink;
-        background-image:linear-gradient(to top,#9356dc, #FF79DA);
-        animation: heart 1000ms;
+        animation: heart 2s infinite;
+        
+    }
+    .far{
+        color:black;
+
 
     }
 }.rest-sub-sub1 {
@@ -414,6 +421,8 @@ a{
      position:relative;
      height:25px;
      width:40px;
+     animation: heart 5s;
+    
   }
   .heart:before,
   .heart:after{
@@ -421,16 +430,17 @@ a{
     content:"";
     height:20px;
     width:10px;
-    border-left:2px solid black;
-    border-right:2px solid red;
+    background-image:linear-gradient(to top,#9356dc, #FF79DA);
     
   }
   .heart:before{
-    left:15px;
+    left:11px;
     transform-origin: 0 100%;
     transform:rotate(-45deg);
     border-radius:40px 40px 0 0 ;
     background-color: white;
+    background-image:linear-gradient(to top,#9356dc, #FF79DA);
+    animation: heart 1000ms;
     
   }
   .heart:after{
@@ -449,7 +459,7 @@ a{
         transform: scaleY(.18);
     }
     24%{
-        transform: scaleY(.4);
+        transform: scaleY(.40);
     }
     46%{
         transform: scaleY(.81);
@@ -490,7 +500,7 @@ a{
     font-size:25px;
     font-weight:700;
     margin-left: 7%;
-    margin-bottom: 10%;
+    margin-bottom:0%;
 }
 .menubox{
     width:100%;
@@ -503,10 +513,21 @@ a{
     border:2px solid green;
 }
 .sideh{
+    width:10%;
     font-size:14px;
     color:black;
     margin-left:7%;
-    border-bottom:2px solid #99e2d0
+    margin-top:10%;
+    border-bottom:3px solid #99e2d0;
+}
+.sideh2{
+    width:20%;
+    font-size:14px;
+    color:black;
+    margin-left:7%;
+    margin-top:10%;
+    border-bottom:3px solid #99e2d0;
+    overflow:visible;
 }
 /*starter menu buttons*/
 .starline1{
@@ -519,14 +540,15 @@ a{
 }
 .starter1{
     width:90%;
-    border:2px solid #f2f2f2;
+    border:2px solid blue;
     background-color: white;
     border-radius: 15px;
     margin-left:5%;
     margin-right:5%;
     padding-left:3%;
     margin-top:5%;
-    margin-bottom:5%;
+    margin-bottom:-20%;
+    overflow:hidden;
     
 }
 .starter1:focus,
@@ -535,10 +557,53 @@ a{
 }
 .secondline{
     display:flex;
-    gap:50%;
+    gap:52%;
     margin-top:-5%;
     margin-bottom:3%;
 }
+.secondline2s{
+    display:flex;
+    gap:15%;
+    margin-top:-5%;
+    margin-bottom:3%;
+}
+.secondline3s{
+    display:flex;
+    gap:67%;
+    margin-top:-5%;
+    margin-bottom:3%;
+}
+.secondline1m{
+    display:flex;
+    gap:42%;
+    margin-top:-5%;
+    margin-bottom:3%;
+}
+.secondline2m{
+    display:flex;
+    gap:41%;
+    margin-top:-5%;
+    margin-bottom:3%;
+}
+.secondline3m{
+    display:flex;
+    gap:35%;
+    margin-top:-5%;
+    margin-bottom:3%;
+}
+.secondline1d{
+    display:flex;
+    gap:42%;
+    margin-top:-5%;
+    margin-bottom:3%;
+}
+.secondline3d{
+    display:flex;
+    gap:25%;
+    margin-top:-5%;
+    margin-bottom:3%;
+}
+/*chekbutton...*/
 .checkmark{
     background-color: white;
     border:2px solid #99e2d0;
@@ -550,23 +615,24 @@ a{
 }
 .fa-check{
     color:#99e2d0;
-    transition-duration:10s;
-    transform: rotate(360deg);
+    /*transition-duration:4s;
+    transform: rotate(360deg);*/
+    animation: rotating 1s infinite;
 }
 
 .checkbtni{
-    float:right;
-    width:4%;
+    width:20%;
     height:65px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color:#99e2d0;
     padding-top:6%;
     padding-left:7%;
-    margin-left:5%;
+    margin-top:5%;
     position:relative;
-    right:5%;
-    bottom:85px;
+    left:75%;
+    bottom:3px;
+    animation:4s slideme;
     visibility:hidden;
 }
 .checkbtni:hover{
@@ -574,21 +640,36 @@ visibility:visible;
  width:20%;
  translate:-8px ease-out;
 }
-@keyframes checkbtn{
-   100%{
-        transform: scaleX(1);
-        
-    }
-    81%{
-        transform: scaleX(.81);
-    }
-    42%{
-        transform: scaleX(0.42);
-    }
-    21%{
-        transform: scaleX(.21);
-    }
+a.btn2{
+    display:flex;
+    width: 60%;
+    height: 60px;
+    border-width: thin;
+    border: 1px solid lightgray;
+    background-image:linear-gradient(to top,#9356dc, #FF79DA);
+    border-radius: 50px;
+    padding-left:22%;
+    padding-right:22%;
+    padding-top:5%;
+    text-decoration: none;
+    font-family:roboto;
+    font-weight:400;
+    font-size:18px;
+    color:white;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:10%;
+}
+@keyframes slideme{
+  0%{
+    transform: translate(100px);
+  }
+}
+@keyframes rotating{
     0%{
-        transform: scaleX(0);
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
     }
 }
