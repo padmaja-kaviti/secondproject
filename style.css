@@ -16,7 +16,7 @@ body{
     justify-content: center;
     background:#333333;
     z-index: 9999;
-   animation:loading 4s ease ;
+   animation:loadingmain 4s ease ;
    transform: translate(-100vw,-100vh);
 }
 .loader::before{
@@ -38,6 +38,20 @@ body{
         transform:rotate(1turn); 
     }
     100%{
+        transform: rotate(0turn);
+    }
+}
+@keyframes loadingmain{
+    0%{
+            transform: rotate(0turn);
+            opacity:1;
+    }
+    60%{
+        opacity: 1; 
+        transform: rotate(0turn);
+    }
+    100%{
+        opacity:1;
         transform: rotate(0turn);
     }
 }
