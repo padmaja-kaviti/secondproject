@@ -127,6 +127,8 @@ a{
 }
 /*starter menu buttons*/
 .starline1{
+    width:100%;
+    height:40%;
     font-family: roboto;
     font-size:16px;
     font-weight:600;
@@ -142,8 +144,8 @@ a{
     margin-left:4%;
     margin-right:4%;
     margin-bottom:4%;
-    border:2px solid red;
     border-radius:15px;
+    border:2px solid #f2f2f2;
 }
  .card .main{
     width:100%;
@@ -154,10 +156,7 @@ a{
     background-color: white;
     border-radius: 15px;
     padding-left:3%;
-    /*margin-top:5%;*/
     margin-bottom:-20%;
-    /*overflow:hidden;*/
-    border:2px solid blue;
     
 }
 .main .maindup{
@@ -169,13 +168,10 @@ border:2px solid #f2f2f2;
 background-color: white;
 border-radius: 15px;
 padding-left:3%;
-/*margin-top:5%;*/
 margin-bottom:-20%;
 position:relative;
 bottom:95%;
 right:3%;
-/*overflow:hidden;*/
-border:2px solid green;
 visibility:hidden;
 
 }
@@ -184,6 +180,8 @@ visibility:hidden;
     visibility:visible;
 }
 .secondline{
+    width:100%;
+    height:40%;
     display:flex;
     gap:52%;
     margin-top:-5%;
@@ -270,11 +268,11 @@ visibility:hidden;
     bottom:25%;
     visibility:hidden; 
 }
-.container{
+/*.container{
     border: 2px solid red;
     width:95%;
     height:73px;
-}
+}*/
 .card:hover .checkbtni{
     visibility: visible;
     animation:1s slideme; 
@@ -301,16 +299,42 @@ a.btn2{
 }
 /*menu animation*/
 #s1{
-    animation:menuanimation 2s ;
-    animation-fill-mode: top;
-    animation-delay: 1s;
+    animation:menudisplay 2s;
+    animation-delay: 333ms;
 }
 #s2{
-    animation:menuanimation 4s ;
+    animation:menudisplay 2s;
+    animation-delay: 666ms;
 }
 #s3{
-    animation:menuanimation 6s ;
+    animation:menudisplay 2s;
+    animation-delay: 999ms;
 }
+#m1{
+    animation:menudisplay 2s;
+    animation-delay: 1332ms;
+}
+#m2{
+    animation:menudisplay 2s;
+    animation-delay: 1665ms;
+}
+#m3{
+    animation:menudisplay 2s;
+    animation-delay: 1998ms;
+}
+#d1{
+    animation:menudisplay 2s;
+    animation-delay: 2331ms;
+}
+#d2{
+    animation:menudisplay 2s;
+    animation-delay: 2664ms;
+}
+#d3{
+    animation:menudisplay 2s;
+    animation-delay: 2997ms;
+}
+
 /*footer section*/
 .one{
     font-family: shrikhand;
@@ -382,16 +406,11 @@ a{
 }
 @keyframes menudisplay{
     0%{
-      opacity:0;
-    }
-    30%{
-      opacity:0;
-    }
-    60%{
-        opacity:0.7;
+      transform: translateY(10px);
+      opacity: 0.7;
     }
     100%{
-        opacity:1;
+      opacity:1;
     }
     
   }
