@@ -3,8 +3,9 @@
 }
 body{
     margin:0px 0px 0px 0px;
-    border:2px solid black;
 }
+
+/* Loading animation */
 .loader{
     position:fixed;
     top:0;
@@ -55,7 +56,8 @@ body{
         transform: rotate(0turn);
     }
 }
-/* Mobile responsive mode*/
+
+/* ..........Mobile responsive mode..................*/
 @media screen and (min-width:320px) and (max-width:750px){
     /*heading logo*/
     .header{
@@ -82,13 +84,13 @@ body{
         border-color: #D3D3D3;
     }
     
-    .input-icons {
+    .map-icons {
         font-size:14px;
         width: 20%;
         border-width: thin;
         position: relative;
         top:2%;
-        padding-left: 5%;
+        text-align:right;
     }
     
     .input-field {
@@ -98,9 +100,9 @@ body{
         border-style: none;
         outline: none;
         border-color: lightgrey;
-        padding-left: 2%;
         padding-top:3%;
         background-color: lightgrey;
+        border:2px solid red;
     
     }
     .input-field::placeholder {
@@ -110,20 +112,23 @@ body{
         font-family: roboto;
         font-size: 18px;
         font-weight: bold;
-        text-align: left;
+        text-align:center;
     }
     .formset{
-        width:60%;
+        width:50%;
         display:flex;
-        margin-left:20%;
-        margin-right:20%;
+        margin-left:10%;
+        margin-right:15%;
+        border:2px solid green;
     }
     .location{
         width:100%;
         display:flex;
+        align-items: center;
+        justify-content: center;
         flex-flow:row wrap;
         background-color: lightgrey;
-        border-top:2px solid grey;
+        border-top:3px solid rgba(50.2%, 50.2% ,50.2% ,0.1);
         padding-top:10px;
         padding-bottom:10px;
     }
@@ -132,29 +137,43 @@ body{
         font-family:roboto;
         font-weight: 900;
         font-size:25px;
-        width:100%;
-        padding-left:17%;
+        width:80%;
+        /*padding-left:17%; */
         margin-bottom:12%;
+        margin-left: 8%;
+        margin-right: 12%;
+        text-align: center;
+        border:2px solid blue;
     }
     .para2{
-        width:100%;
+        width:90%;
         font-family: roboto;
         font-size:19px;
         color:grey;
-        justify-content:center;
-        padding-left:7%;
+        text-align:center;
         margin-bottom:-20px;
+        border:2px solid green;
     }
     .para2-1{
         width:100%;
         font-family: roboto;
         font-size:19px;
         color:grey;
-        justify-content:center;
-        padding-left:35%;
+        text-align:center;
         margin-bottom:10%;
+        margin-left:-2%;
     }
     /*button*/
+    .para3{
+        width:95%;
+        font-family:roboto;
+        font-weight:400;
+        font-size:18px;
+        color:white;
+        border:2px solid white;
+        text-decoration: none;
+        text-align: center;
+    }
     a.btn{
         display:flex;
         width: 60%;
@@ -163,14 +182,9 @@ body{
         border: 1px solid lightgray;
         background-image:linear-gradient(to top,#9356dc, #FF79DA);
         border-radius: 50px;
-        padding-left:6%;
-        padding-right:4%;
-        padding-top:3%;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
-        font-family:roboto;
-        font-weight:400;
-        font-size:18px;
-        color:white;
         margin-left:20%;
         margin-right:20%;
     }
@@ -186,7 +200,7 @@ body{
         background-color: #f2f2f2;
     }
     /* How it works block*/
-    .how1{
+    .howtext{
         font-family: roboto;
         font-weight:900;
         font-size:25px;
@@ -243,6 +257,7 @@ body{
         font-size:16px;
         color:gray;
         text-decoration: none;
+
     }
     .filters:focus,
     .filters:hover .fa-mobile-screen-button{
@@ -260,6 +275,7 @@ body{
         color:gray;
     }
     .filters:focus,
+    .filters:active,
     .filters:hover .fa-store{
         color:#9356dc;
     }
@@ -269,9 +285,14 @@ body{
         font-size:14px;
         color:black;
     }
-    .h2{
+    .circle-num{
         margin-left:-5%;
     }
+    .how2{
+        display:flex;
+        flex-direction:column;
+    }
+   
     /*Resturents menus*/
     .r1{
         font-family: roboto;
@@ -297,7 +318,469 @@ body{
     .top-pic{
         height:60%;
         width:100%;
+    }
+    .bottom-text{
+        height:40%;
+        width:100%;
+        margin-top:5%;
+    }
+    .bottom-text1{
+        height:40%;
+        width:100%;
+        margin-top:5%;
+    }
+    .line1{
+        width:50%;
+        font-family:roboto;
+        font-style: bold;
+        font-weight:700;
+        font-size:14px;
+        color:black;
+        margin-bottom:-2%;
+        display:flex;
+    }
+    .line2{
+        font-family:roboto;
+        font-size:14px;
+        color:grey;
+        margin-top:-2px;
+    }
+    .block{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        margin-top:2%;
+        padding-left:2%;
+    }
+    .block1{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        gap:35%;
+    }
+    .block2{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        gap:35%;
+    }
+    .block3{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        gap:70%;
+    }
+    .fa-heart{
+        color:mediumorchid;
+        font-size:22px;
+    
+    }
+   
+    .far{
+        color:black;
+    }
+    .animatedheart{
+        width:10%;
+        height:25px;
+      }
+      .animatedheart .mainheart{
+        width:100%;
+        height:25px;
+        visibility:hidden;
+       /* border:2px solid green;*/
+      }
+      .animatedheart:focus,
+      .animatedheart:hover .mainheart{
+        visibility: visible;
+        animation:heart 1s;
+      }
+       .dupheart{
+        width:100%;
+        height:25px;
+        /*border:2px solid black;*/
+        position:relative;
+        bottom:110%;
+      }
+      .animatedheart:focus,
+      .animatedheart:hover .dupheart{
+        visibility: hidden;
+      }
+}.rest-card{
+	height: 30%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #f2f2f2;
+    overflow: hidden;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 15px;
+	margin: 4% 5% 4% 5%;
+    text-decoration: none;
+
+}
+.rest-card:focus{
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px gray;
+}
+.rest-sub{
+    width:100%;
+    /*border:2px solid green;*/
+}
+.fa-sharp .fa-regular .fa-heart{
+    color:black;
+}
+/*footer section*/
+.one{
+    font-family: shrikhand;
+    font-style: bold;
+    font-weight: 900;
+    font-size:30px;
+    color:white;
+    text-decoration: none;
+}
+.last{
+    width:100%;
+    margin-top:15%;
+    background-color: black;
+    opacity: 0.7;
+    padding-left:8%;
+    padding-top:2%;
+    padding-bottom: 4%;
+}
+a{
+    display: block;
+}
+.final{
+    text-decoration: none;
+    
+}
+.fa-cutlery{
+    font-size:20px;
+    color:white;
+}
+.fa-handshake{
+    font-size:20px;
+    color:white;
+     transform: rotate(130deg);
+     margin-top:8%;
+}
+.text{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:5%;
+}
+.setline2{
+    margin-top:-5%;
+}
+.text1{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:3%;
+    margin-top:4%;
+}
+.text2{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:1%;
+}
+
+@keyframes heart {
+    0%{
+        transform: scaleY(0.09);
+        
+    }
+    10%{
+        transform: scaleY(.18);
+    }
+    40%{
+        transform: scaleY(.40);
+    }
+    80%{
+        transform: scaleY(.81);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+    
+}
+/* .............IPAD.............................*/
+@media screen and (min-width:751px) and (max-width:950px){
+    .header{
+        width:100%;
+        padding-left: 10%;
+        padding-right:10%;
+        padding-top:12px;
+        margin-bottom:10px;
+        /*background-color: yellow;*/
+    }
+    .logo{
+        height:45px;
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
+    }
+     /*map Icon with inputfield */
+    .fas {
+        background-color: lightgray;
+        font-size:20px;
+        width:100%;
+        padding:12px;
+        border-width: thin;
+        border-color: #D3D3D3;
+    }
+    
+    .map-icons {
+        width: 20%;
+        border-width: thin;
+        position: relative;
+        top:2%;
+        text-align:right;
+    }
+    
+    .input-field {
+        width: 80%;
+        height:auto;
+        border-width: thin;
+        border-style: none;
+        outline: none;
+        border-color: lightgrey;
+        padding-top:3%;
+        background-color: lightgrey;
+        border:2px solid red;
+    
+    }
+    .input-field::placeholder {
+        color: black;
+        opacity:0.7;
+        background-color: lightgrey;
+        font-family: roboto;
+        font-size: 20px;
+        font-weight: bold;
+        text-align:center;
+    }
+    .formset{
+        width:30%;
+        display:flex;
+        margin-left:10%;
+        margin-right:15%;
+        border:2px solid green;
+    }
+    .location{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow:row wrap;
+        background-color: lightgrey;
+        border-top:3px solid rgba(50.2%, 50.2% ,50.2% ,0.1);
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    /* booking text block*/
+    .para1{
+        font-family:roboto;
+        font-weight: 900;
+        font-size:35px;
+        width:80%;
+        /*padding-left:17%; */
+        margin-bottom:6%;
+        margin-left: 8%;
+        margin-right: 12%;
+        text-align: center;
         border:2px solid blue;
+    }
+    .para2{
+        width:80%;
+        font-family: roboto;
+        font-size:22px;
+        color:grey;
+        text-align:center;
+        margin-left:8%;
+        margin-right:12%;
+        margin-bottom:-20px;
+        border:2px solid green;
+    }
+    .para2-1{
+        width:80%;
+        font-family: roboto;
+        font-size:22px;
+        color:grey;
+        text-align:center;
+        margin-left:8%;
+        margin-right:12%;
+        margin-bottom:8%;
+    }
+    /*button*/
+    .para3{
+        width:95%;
+        font-family:roboto;
+        font-weight:400;
+        font-size:18px;
+        color:white;
+        border:2px solid white;
+        text-decoration: none;
+        text-align: center;
+    }
+    a.btn{
+        display:flex;
+        width: 35%;
+        height: 60px;
+        border-width: thin;
+        border: 1px solid lightgray;
+        background-image:linear-gradient(to top,#9356dc, #FF79DA);
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-left:33%;
+        margin-right:  30%;
+    }
+    a.btn:focus{
+        opacity:0.8;
+        box-shadow: 5px 5px 5px #99e2d0;
+    }
+    .book-block{
+        width:100%;
+        margin-top:-15px;
+        padding-top:4%;
+        padding-bottom:15%;
+        background-color: #f2f2f2;
+    }
+    /* How it works block*/
+    .howtext{
+        font-family: roboto;
+        font-weight:900;
+        font-size:25px;
+        margin-left: 10%;
+    }
+    .filters{
+        width:50%;
+        height:70px;
+        border-radius:30px;
+        border:2px solid #f2f2f2;
+        background-color: #f2f2f2;
+        display:flex;
+        gap:8%;
+        text-decoration: none;
+        padding-top:6%;
+        margin-left:10%;
+        margin-bottom:20px;
+     }
+     .filters:focus,
+     .filters:hover{
+        box-shadow: 5px 5px 5px grey;
+        background-color:lavender;
+     }
+    .fa-sharp{
+        font-size:14px;
+    }
+    .fa-circle{
+        color:#9356DC;
+        font-size:24px;
+        margin-left:-8%;
+        position:relative;
+        bottom:85%;
+        left:25%;
+    }
+    .fa-1{
+        position:relative;
+        left:75%;
+        bottom:95%;
+        color:white;
+        font-size:12px;
+        z-index:10;
+    }
+    .fa-2{
+        position:relative;
+        left:75%;
+        bottom:95%;
+        color:white;
+        font-size:12px;
+        z-index:11;
+    }
+    .fa-3{
+        position:relative;
+        left:75%;
+        bottom:95%;
+        color:white;
+        font-size:12px;
+        z-index:12;
+    }
+    .fa-mobile-screen-button{
+        font-size:16px;
+        color:gray;
+        text-decoration: none;
+
+    }
+    .filters:focus,
+    .filters:hover .fa-mobile-screen-button{
+        color:#9356dc;
+    }
+    .fa-bars{
+        color:gray;
+    }
+    .filters:focus,
+    .filters:hover .fa-bars{
+        color:#9356dc;
+    }
+    .fa-store{
+        font-size:16px;
+        color:gray;
+    }
+    .filters:focus,
+    .filters:active,
+    .filters:hover .fa-store{
+        color:#9356dc;
+    }
+    .filternames{
+        font-family:roboto;
+        font-weight:500;
+        font-size:14px;
+        color:black;
+    }
+    .circle-num{
+        margin-left:-5%;
+    }
+    .how2{
+        display:flex;
+        flex-direction:column;
+    }
+     /*Resturents menus*/
+     .r1{
+        font-family: roboto;
+        font-weight:900;
+        font-size:25px;
+        margin-left:10%;
+    }
+    .images{
+        height:130px;
+        width:100%;
+    }
+    .lbel{
+        position:relative;
+        bottom:105px;
+        left:70%;
+        color:black;
+        background-color: #99e2d0;
+        padding:5px 20px 5px 20px;
+        font-family: roboto;
+        font-weight: 700;
+    }
+
+    .top-pic{
+        height:60%;
+        width:100%;
     }
     .bottom-text{
         height:40%;
@@ -380,9 +863,13 @@ body{
         position:relative;
         bottom:110%;
       }
-}.rest-sub-sub1 {
+      .animatedheart:focus,
+      .animatedheart:hover .dupheart{
+        visibility: hidden;
+      }
+.rest-card{
 	height: 30%;
-	width: 90%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	border: 2px solid #f2f2f2;
@@ -391,17 +878,19 @@ body{
 	border-bottom-left-radius: 20px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 15px;
-	margin: 4% 5% 4% 5%;
+	margin: 5%;
     text-decoration: none;
 
 }
-.rest-sub-sub1:focus{
+.rest-card:focus{
     opacity: 0.8;
     box-shadow: 5px 5px 5px gray;
 }
 .rest-sub{
     width:100%;
-    border:2px solid green;
+    display:flex;
+    flex-flow:row wrap;
+    /*border:2px solid green;*/
 }
 .fa-sharp .fa-regular .fa-heart{
     color:black;
@@ -449,6 +938,9 @@ a{
     font-size: 20px;
     margin-left:5%;
 }
+.setline2{
+    margin-top:-5%;
+}
 .text1{
     font-family: roboto;
     font-style:bold;
@@ -467,22 +959,416 @@ a{
     margin-left:1%;
 }
 
-@keyframes heart {
-    0%{
-        transform: scaleY(0.09);
-        
+   
+} 
+/* .............desktop.............................*/
+@media screen and (min-width:950px){
+    .header{
+        width:100%;
+        padding-left: 10%;
+        padding-right:10%;
+        padding-top:12px;
+        margin-bottom:10px;
+        /*background-color: yellow;*/
     }
-    10%{
-        transform: scaleY(.18);
+    .logo{
+        height:45px;
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
     }
-    40%{
-        transform: scaleY(.40);
+     /*map Icon with inputfield */
+    .fas {
+        background-color: lightgray;
+        font-size:20px;
+        width:100%;
+        padding:12px;
+        border-width: thin;
+        border-color: #D3D3D3;
     }
-    80%{
-        transform: scaleY(.81);
-    }
-    100%{
-        transform: scaleY(1);
+    a{
+        display:block;
     }
     
+    .map-icons {
+        width: 20%;
+        border-width: thin;
+        position: relative;
+        top:2%;
+        text-align:right;
+    }
+    
+    .input-field {
+        width: 80%;
+        height:auto;
+        border-width: thin;
+        border-style: none;
+        outline: none;
+        border-color: lightgrey;
+        padding-top:3%;
+        background-color: lightgrey;
+        border:2px solid red;
+    
+    }
+    .input-field::placeholder {
+        color: black;
+        opacity:0.7;
+        background-color: lightgrey;
+        font-family: roboto;
+        font-size: 20px;
+        font-weight: bold;
+        text-align:center;
+    }
+    .formset{
+        width:30%;
+        display:flex;
+        margin-left:10%;
+        margin-right:15%;
+        border:2px solid green;
+    }
+    .location{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow:row wrap;
+        background-color: lightgrey;
+        border-top:3px solid rgba(50.2%, 50.2% ,50.2% ,0.1);
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    /* booking text block*/
+    .para1{
+        font-family:roboto;
+        font-weight: 900;
+        font-size:35px;
+        width:80%;
+        /*padding-left:17%; */
+        margin-bottom:3%;
+        margin-left: 8%;
+        margin-right: 12%;
+        text-align: center;
+        border:2px solid blue;
+    }
+    .para2{
+        width:80%;
+        font-family: roboto;
+        font-size:22px;
+        color:grey;
+        text-align:center;
+        margin-left:8%;
+        margin-right:12%;
+        margin-bottom:-20px;
+        border:2px solid green;
+    }
+    .para2-1{
+        width:80%;
+        font-family: roboto;
+        font-size:22px;
+        color:grey;
+        text-align:center;
+        margin-left:8%;
+        margin-right:12%;
+        margin-bottom:4%;
+    }
+    /*button*/
+    .para3{
+        width:95%;
+        font-family:roboto;
+        font-weight:400;
+        font-size:18px;
+        color:white;
+        border:2px solid white;
+        text-decoration: none;
+        text-align: center;
+    }
+    a.btn{
+        display:flex;
+        width: 25%;
+        height: 60px;
+        border-width: thin;
+        border: 1px solid lightgray;
+        background-image:linear-gradient(to top,#9356dc, #FF79DA);
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-left:38%;
+        margin-right:  30%;
+    }
+    a.btn:focus{
+        opacity:0.8;
+        box-shadow: 5px 5px 5px #99e2d0;
+    }
+    .book-block{
+        width:100%;
+        margin-top:-15px;
+        padding-top:4%;
+        padding-bottom:8%;
+        background-color: #f2f2f2;
+    }
+    /* how it works..........................*/
+    .howtext{
+        font-family: roboto;
+        font-weight:900;
+        font-size:25px;
+        margin-left: 10%;
+    }
+    .filters{
+        width:25%;
+        height:70px;
+        border-radius:30px;
+        border:2px solid #f2f2f2;
+        background-color: #f2f2f2;
+        display:flex;
+        gap:8%;
+        text-decoration: none;
+        padding-top:6%;
+        margin-left:5%;
+        margin-bottom:20px;
+        border:2px solid blue;
+     }
+     .filters:focus,
+     .filters:hover{
+        box-shadow: 5px 5px 5px grey;
+        background-color:lavender;
+     }
+    .fa-sharp{
+        font-size:14px;
+    }
+    .fa-circle{
+        color:#9356DC;
+        font-size:24px;
+        margin-left:-8%;
+        position:relative;
+    }
+    .fa-1{
+        position:relative;
+        bottom:5px;
+        z-index:10;
+        left:50%;
+        color:white;
+        font-size:12px;
+    }
+    .fa-2{
+        position:relative;
+        bottom:6px;
+        left:50%;
+        color:white;
+        font-size:12px;
+        z-index:10;
+    }
+    .fa-3{
+        position:relative;
+        bottom:6px;
+        z-index:12;
+        left:50%;
+        color:white;
+        font-size:12px;
+    }
+    .fa-mobile-screen-button{
+        font-size:16px;
+        color:gray;
+        text-decoration: none;
+        position:relative;
+        bottom:50px;
+    }
+    .filters:focus,
+    .filters:hover .fa-mobile-screen-button{
+        color:#9356dc;
+    }
+    .fa-bars{
+        color:gray;
+        position:relative;
+        bottom:50px;
+    }
+    .filters:focus,
+    .filters:hover .fa-bars{
+        color:#9356dc;
+    }
+    .fa-store{
+        font-size:16px;
+        color:gray;
+        position:relative;
+        bottom:50px;
+    }
+    .filters:focus,
+    .filters:active,
+    .filters:hover .fa-store{
+        color:#9356dc;
+    }
+    .filternames{
+        font-family:roboto;
+        font-weight:500;
+        font-size:14px;
+        position:relative;
+        bottom:50px;
+        color:black;
+    
+    }
+    .circle-num{
+        position:relative;
+        bottom:55px;
+        margin-left:-5%;
+    }
+    .how2{
+        display:flex;
+        flex-direction:row;
+        border:2px solid red;
+    }
+
+
+     /*Resturents menus*/
+     .r1{
+        font-family: roboto;
+        font-weight:900;
+        font-size:25px;
+        margin-left:10%;
+    }
+    .images{
+        height:130px;
+        width:100%;
+    }
+    .lbel{
+        position:relative;
+        bottom:125px;
+        left:70%;
+        color:black;
+        background-color: #99e2d0;
+        padding:5px 20px 5px 20px;
+        font-family: roboto;
+        font-weight: 700;
+    }
+
+    .top-pic{
+        height:60%;
+        width:100%;
+    }
+    .bottom-text{
+        height:40%;
+        width:100%;
+        margin-top:-5%;
+    }
+    .bottom-text1{
+        height:40%;
+        width:100%;
+    }
+    .line1{
+        width:80%;
+        font-family:roboto;
+        font-style: bold;
+        font-weight:700;
+        font-size:14px;
+        color:black;
+        margin-bottom:-2%;
+        display:flex;
+        border:2px solid blue;
+    }
+    .line2{
+        font-family:roboto;
+        font-size:14px;
+        color:grey;
+        margin-top:-2px;
+    }
+    .block{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        margin-top:2%;
+        padding-left:2%;
+    }
+    .block1{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        gap:5%;
+    }
+    .block2{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        gap:5%;
+    }
+    .block3{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        gap:10%;
+    }
+    .fa-heart{
+        color:mediumorchid;
+        font-size:22px;
+    
+    }
+   
+    .far{
+        color:black;
+    }
+    .animatedheart{
+        width:10%;
+        height:25px;
+        margin-right:5%;
+        border:2px solid red;
+      }
+      .animatedheart .mainheart{
+        width:100%;
+        height:25px;
+        visibility:hidden;
+       /* border:2px solid green;*/
+      }
+      .animatedheart:focus,
+      .animatedheart:hover .mainheart{
+        visibility: visible;
+        animation:heart 1s;
+      }
+       .dupheart{
+        width:100%;
+        height:25px;
+        /*border:2px solid black;*/
+        position:relative;
+        bottom:110%;
+      }
+      .animatedheart:focus,
+      .animatedheart:hover .dupheart{
+        visibility: hidden;
+      }
+.rest-card{
+	height: 30%;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #f2f2f2;
+    overflow: hidden;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 15px;
+	margin: 1% 1% 1% 1%;
+    text-decoration: none;
+
+}
+.rest-card:focus{
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px gray;
+}
+.rest-sub{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    /*border:2px solid green;*/
+}
+.fa-sharp .fa-regular .fa-heart{
+    color:black;
+}
+     /*-----------Footer-----------------*/
+     .last{
+        width:100%;
+        margin-top:15%;
+        background-color: black;
+        opacity: 0.7;
+        padding-left:8%;
+        padding-top:2%;
+        padding-bottom: 4%;
+    }
+
 }
