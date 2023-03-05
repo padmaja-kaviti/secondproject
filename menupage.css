@@ -8,11 +8,915 @@ body{
  html,body{
     overflow-x:hidden;
 }
+body::-webkit-scrollbar{
+    display:none;
+}
 a{
     text-decoration: none;
     color:black
 }
+
+@keyframes slideme{
+    0%{
+      transform: translateX(100px);
+    }
+  }
+  @keyframes rotating{
+      0%{
+  
+          transform:rotate(0deg);
+      }
+      100%{
+          transform:rotate(360deg);
+      }
+  }
+  @keyframes menudisplay{
+      0%{
+        transform: translateY(10px);
+        opacity: 0.5;
+      }
+      100%{
+        opacity:1;
+      }
+      
+    }
+    @keyframes heart {
+      0%{
+          transform: scaleY(0.09);
+          
+      }
+      10%{
+          transform: scaleY(.18);
+      }
+      40%{
+          transform: scaleY(.40);
+      }
+      80%{
+          transform: scaleY(.81);
+      }
+      100%{
+          transform: scaleY(1);
+      }
+      
+  }
+/*Menu Page 1*/
+@media screen and (min-width:320px) and (max-width:750px){
+
+.fa-arrow-left{
+    font-size:23px;
+    color:black;
+    
+}
+.arrow{
+    position:relative;
+    left:95%;
+    top:10%;
+
+}
+
+.logo{
+    width:70%;
+    position: relative;
+    left:15%;
+    bottom:3%;
+    padding-left:10%;
+}
+.logoimg{
+    width:70%;
+    object-fit: fill;
+}
+.menu1img{
+    width:100%;
+    height:250px;
+    margin-top:-1%;
+    position:relative;
+    left:0;
+}
+.mimg1{
+    width:100%;
+    height:200px;
+    object-fit: fill;
+}
+.homebutton{
+    display:flex;
+    flex-direction: row;
+    padding-top:5%;
+    padding-bottom:3%;
+}
+/* menu image container*/
+.typedish{
+    width:100%;
+    margin:0%;
+}
+.block2{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+
+.menu1img{
+    width:100%;
+    height:250px;
+    margin-top:-1%;
+    position:relative;
+    left:0;
+}
+.mimg1{
+    width:100%;
+    height:300px;
+    object-fit: fill;
+}
+/* menu container*/
+.fa-heart{
+    color:mediumorchid;
+    opacity:0.7;
+    font-size:25px;
+
+}
+
+.far{
+    color:black;
+    font-size: 26px;
+}
+.animatedheart{
+    width:10%;
+    /*height:25px;*/
+    margin-top:2%;
+  }
+  .animatedheart .mainheart{
+    width:100%;
+    height:25px;
+    visibility:hidden;
+   /* border:2px solid green;*/
+  }
+  .animatedheart:focus,
+  .animatedheart:hover .mainheart{
+    visibility: visible;
+    animation:heart 1s;
+  }
+   .dupheart{
+    width:100%;
+    height:25px;
+    /*border:2px solid black;*/
+    position:relative;
+    bottom:60%;
+  }
+  .animatedheart:focus,
+  .animatedheart:hover .dupheart{
+    visibility:hidden;
+  }
+.menuhead{
+    width:69%;
+    font-family: shrikhand;
+    font-size:25px;
+    font-weight:700;
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-bottom:0%;
+
+}
+.menubox{
+    width:100%;
+    background-color:#f2f2f2;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position:relative;
+    top:35%;
+    padding-top:10%;
+    /*padding-left: 3%;
+    padding-right:4%;*/
+    padding-bottom:25%;
+    display:flex;
+    flex-direction: column;
+}
+.sideh{
+    width:10%;
+    font-size:14px;
+    color:black;
+    margin-left:7%;
+    margin-top:10%;
+    margin-bottom:5%;
+    border-bottom:3px solid #99e2d0;
+}
+.sideh2{
+    width:10%;
+    white-space:nowrap ;
+    font-size:14px;
+    color:black;
+    margin-left:7%;
+    margin-top:10%;
+    margin-bottom:5%;
+    display:flex;
+    flex-flow:row wrap;
+    border-bottom:3px solid #99e2d0;
+    overflow:visible;
+}
+/*starter menu buttons*/
+.starline1{
+    width:100%;
+    height:40%;
+    font-family: roboto;
+    font-size:16px;
+    font-weight:600;
+}
+.starline2{
+    width:85%;
+    font-size:15px;
+}
+.starline3{
+    width:15%;
+    font-weight: 600;
+}
+.secondline{
+    width:100%;
+    height:40%;
+    display:flex;
+    margin-top:-3%;
+    margin-bottom:3%;
+}
+.secondlinedup{
+    width:80%;
+    display:flex;
+    margin-top:-2%;
+    margin-bottom:3%;
+}
+
+.card{
+    width:90%;
+    height:75px;
+    display:flex;
+    flex-flow:row wrap;
+    margin-left:4%;
+    margin-right:4%;
+    margin-bottom:4%;
+    border-radius:15px;
+    border:2px solid #f2f2f2;
+}
+ .card .main{
+    width:100%;
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    border:2px solid #f2f2f2;
+    background-color: white;
+    border-radius: 15px;
+    padding-left:3%;
+    margin-bottom:-20%;
+    
+}
+.card:focus,
+.card:hover .main{
+    visibility:hidden;
+}
+.card .maindup{
+width:100%;
+height:100%;
+display: flex;
+flex-direction: column;
+background-color: white;
+border-radius: 15px;
+padding-left:3%;
+margin-bottom:-20%;
+position:relative;
+bottom:105%;
+right:3%;
+visibility:hidden;
+
+}
+.card:focus,
+.card:hover .maindup{
+    visibility:visible;
+}
+
+
+/*chekbutton...*/
+.checkmark{
+    background-color: white;
+    border:2px solid #99e2d0;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    padding-top:2px;
+    position:relative;
+    left:65%;
+    top:30%;
+    visibility: hidden;
+    }
+.card:hover .checkmark{
+    visibility: visible;
+    animation:rotating 2s,slideme 1s;
+
+}
+ .fa-check{
+    color:#99e2d0;
+}
+.card .checkbtni{
+    width:20%;
+    height:100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color:#99e2d0;
+    padding-top:6%;
+    padding-left:7%;
+    margin-top:5%;
+    position:relative;
+    left:80%;
+    bottom:26%;
+  visibility:hidden;
+}
+.card:hover .checkbtni{
+    visibility: visible;
+    animation:slideme 1s; 
+}
+a.btn2{
+    display:flex;
+    width: 60%;
+    height: 50px;
+    border-width: thin;
+    border: 1px solid lightgray;
+    background-image:linear-gradient(to top,#9356dc, #FF79DA);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:5%;
+    color:white;
+}
+a.btn2:focus{
+    opacity:0.8;
+    box-shadow: 5px 5px 5px #99e2d0;
+}
+/*menu animation*/
+#s1{
+    animation:menudisplay 2s;
+    animation-delay: 333ms;
+}
+#s2{
+    animation:menudisplay 2s;
+    animation-delay: 666ms;
+}
+#s3{
+    animation:menudisplay 2s;
+    animation-delay: 999ms;
+}
+#m1{
+    animation:menudisplay 2s;
+    animation-delay: 1332ms;
+}
+#m2{
+    animation:menudisplay 2s;
+    animation-delay: 1665ms;
+}
+#m3{
+    animation:menudisplay 2s;
+    animation-delay: 1998ms;
+}
+#d1{
+    animation:menudisplay 2s;
+    animation-delay: 2331ms;
+}
+#d2{
+    animation:menudisplay 2s;
+    animation-delay: 2664ms;
+}
+#d3{
+    animation:menudisplay 2s;
+    animation-delay: 2997ms;
+}
+
+/*footer section*/
+.one{
+    font-family: shrikhand;
+    font-style: bold;
+    font-weight: 900;
+    font-size:30px;
+    color:white;
+    text-decoration: none;
+}
+.hed{
+    width:100%;
+    padding-left:0%;
+    padding-right: 0%;
+}
+.fl1{
+    width:80%;
+    padding-top:0%;
+}
+.fl2{
+    width:80%;
+    margin-top: -2%;
+}
+.fl3{
+    width:80%;
+    margin-top:1%;
+}
+.fl4{
+    width:80%;
+    margin-top:-2%;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-top:0%;
+    background-color: black;
+    opacity: 0.7;
+    padding-left:8%;
+    padding-top:2%;
+    padding-bottom: 4%;
+}
+a{
+    display: block;
+}
+.fa-cutlery{
+    font-size:20px;
+    color:white;
+}
+.fa-handshake{
+    font-size:20px;
+    color:white;
+     transform: rotate(130deg);
+     margin-top:8%;
+}
+.text{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:5%;
+}
+.text1{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:3%;
+    margin-top:4%;
+}
+.text2{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:1%;
+}
+
+@keyframes slideme{
+  0%{
+    transform: translateX(100px);
+  }
+}
+@keyframes rotating{
+    0%{
+
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes menudisplay{
+    0%{
+      transform: translateY(10px);
+      opacity: 0.5;
+    }
+    100%{
+      opacity:1;
+    }
+    
+  }
+  @keyframes heart {
+    0%{
+        transform: scaleY(0.09);
+        
+    }
+    10%{
+        transform: scaleY(.18);
+    }
+    40%{
+        transform: scaleY(.40);
+    }
+    80%{
+        transform: scaleY(.81);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+    
+}
+}
+/*..................IPAD..............................*/
+@media screen and (min-width:751px) and (max-width:929px){
+
+    .fa-arrow-left{
+        font-size:34px;
+        color:black;
+    }
+    .arrow{
+        width:100%;
+        position:relative;
+        left:290%;
+        top:20%;
+    
+    }
+    
+    .logo{
+        height:70px;
+        width:70%;
+        position: relative;
+        left:10%;
+    }
+    .logoimg{
+        width:100%;
+        height:70px;
+        object-fit:fill;
+    }
+    .menu1img{
+        width:100%;
+        height:350px;
+        margin-top:-1%;
+        position:relative;
+        left:0;
+    }
+    .mimg1{
+        width:100%;
+        height:300px;
+        object-fit: fill;
+    }
+    .homebutton{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        padding-top:2%;
+        padding-bottom:2%;
+    }
+    .typedish{
+        width:33%;
+        margin:0%;
+    }
+    .block2{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        margin-top: -5%;
+    }
+    
+    
+    .menu1img{
+        width:100%;
+        height:250px;
+        margin-top:-1%;
+        position:relative;
+        left:0;
+    }
+    .mimg1{
+        width:100%;
+        height:300px;
+        object-fit: fill;
+    }
+    /* menu container*/
+    .fa-heart{
+        color:mediumorchid;
+        opacity:0.7;
+        font-size:40px;
+    
+    }
+    
+    .far{
+        color:black;
+    }
+    .animatedheart{
+        width:10%;
+        height:25px;
+      }
+      .animatedheart .mainheart{
+        width:100%;
+        height:25px;
+        visibility:hidden;
+       /* border:2px solid green;*/
+      }
+      .animatedheart:focus,
+      .animatedheart:hover .mainheart{
+        visibility: visible;
+        animation:heart 1s;
+      }
+       .dupheart{
+        width:100%;
+        height:25px;
+        /*border:2px solid black;*/
+        position:relative;
+        bottom:110%;
+      }
+      .animatedheart:focus,
+      .animatedheart:hover .dupheart{
+        visibility: hidden;
+      }
+    .menuhead{
+        width:70%;
+        font-family: shrikhand;
+        font-size:35px;
+        font-weight:700;
+        margin-left: 7%;
+        margin-right: 5%;
+        margin-bottom:0%;
+    }
+    .menubox{
+        width:100%;
+        background-color:#f2f2f2;
+        position:relative;
+        top:20%;
+        padding-top:10%;
+        /*padding-left: 3%;
+        padding-right:4%;*/
+        padding-bottom:5%;
+        display:flex;
+        flex-flow: row wrap;
+    
+    }
+    .sideh{
+        width:10%;
+        font-size:14px;
+        color:black;
+        margin-left:7%;
+        margin-top:10%;
+        margin-bottom:5%;
+        border-bottom:3px solid #99e2d0;
+    }
+    .sideh2{
+        width:10%;
+        white-space:nowrap ;
+        font-size:14px;
+        color:black;
+        margin-left:7%;
+        margin-top:10%;
+        margin-bottom:5%;
+        display:flex;
+        flex-flow:row wrap;
+        border-bottom:3px solid #99e2d0;
+        overflow:visible;
+    }
+    /*starter menu buttons*/
+    .starline1{
+        width:100%;
+        height:40%;
+        font-family: roboto;
+        font-size:16px;
+        font-weight:600;
+    }
+    .starline2{
+        width:85%;
+        font-size:15px;
+    }
+    .starline3{
+        width:15%;
+        font-weight: 600;
+    }
+    
+    .card{
+        width:90%;
+        height:90px;
+        display:flex;
+        flex-flow:row wrap;
+        margin-left:4%;
+        margin-right:4%;
+        margin-bottom:10%;
+        border-radius:15px;
+    }
+     .card .main{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 15px;
+        padding-left:3%;
+        margin-bottom:-20%;
+        
+        
+    }
+    .card:focus
+    .card:hover .main{
+        display:none;
+    }
+    .card .main .maindup{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding-left:3%;
+    margin-bottom:0%;
+    position:relative;
+    bottom:75%;
+    visibility:hidden;
+    
+    }
+    .card:focus,
+    .card:hover .maindup{
+        visibility:visible;
+    }
+    .secondline{
+        width:100%;
+        height:40%;
+        display:flex;
+        margin-top:-3%;
+        margin-bottom:3%;
+    }
+    .secondlinedup{
+        width:80%;
+        display:flex;
+        margin-top:-3%;
+        margin-bottom:3%;
+    }
+    
+    /*chekbutton...*/
+    .card .checkmark{
+        background-color: white;
+        border:2px solid #99e2d0;
+        width:25px;
+        height:25px;
+        border-radius:50%;
+        padding-top:2px;
+        position:relative;
+        left:65%;
+        bottom:5%;
+        visibility: hidden;
+        }
+    .card:hover .checkmark{
+        visibility: visible;
+        animation:rotating 2s,slideme 1s;
+    
+    }
+     .fa-check{
+        color:#99e2d0;
+    }
+    .card .checkbtni{
+        width:20%;
+        height:100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color:#99e2d0;
+        padding-top:6%;
+        padding-left:7%;
+        margin-top:5%;
+        position:relative;
+        left:80%;
+        bottom:59%;
+      visibility:hidden;
+    }
+    .card:hover .checkbtni{
+        visibility: visible;
+        animation:slideme 1s; 
+    }
+    a.btn2{
+        display:flex;
+        width: 25%;
+        height: 70px;
+        border: 1px thin lightgray;
+        background-image:linear-gradient(to top,#9356dc, #FF79DA);
+        border-radius: 50px;
+        padding-left:11%;
+        padding-right:0%;
+        padding-top:2%;
+        text-decoration: none;
+        font-family:roboto;
+        font-weight:400;
+        font-size:18px;
+        color:white;
+        margin-left:37%;
+        margin-right:37%;
+        margin-top:0%;
+    }
+    /*menu animation*/
+    #s1{
+        animation:menudisplay 2s;
+        animation-delay: 333ms;
+    }
+    #s2{
+        animation:menudisplay 2s;
+        animation-delay: 666ms;
+    }
+    #s3{
+        animation:menudisplay 2s;
+        animation-delay: 999ms;
+    }
+    #m1{
+        animation:menudisplay 2s;
+        animation-delay: 1332ms;
+    }
+    #m2{
+        animation:menudisplay 2s;
+        animation-delay: 1665ms;
+    }
+    #m3{
+        animation:menudisplay 2s;
+        animation-delay: 1998ms;
+    }
+    #d1{
+        animation:menudisplay 2s;
+        animation-delay: 2331ms;
+    }
+    #d2{
+        animation:menudisplay 2s;
+        animation-delay: 2664ms;
+    }
+    #d3{
+        animation:menudisplay 2s;
+        animation-delay: 2997ms;
+    }
+    /*footer section*/
+.one{
+    font-family: shrikhand;
+    font-style: bold;
+    font-weight: 900;
+    font-size:30px;
+    color:white;
+    text-decoration: none;
+}
+.hed{
+    width:100%;
+    padding-left:0%;
+    padding-right: 0%;
+}
+.fl1{
+    width:80%;
+    padding-top:0%;
+}
+.fl2{
+    width:80%;
+    margin-top: -2%;
+}
+.fl3{
+    width:80%;
+    margin-top:2%;
+}
+.fl4{
+    width:80%;
+    margin-top:0%;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-top:0%;
+    background-color: black;
+    opacity: 0.7;
+    padding-left:8%;
+    padding-top:2%;
+    padding-bottom: 4%;
+}
+a{
+    display: block;
+}
+.fa-cutlery{
+    font-size:20px;
+    color:white;
+}
+.fa-handshake{
+    font-size:20px;
+    color:white;
+     transform: rotate(130deg);
+     margin-top:8%;
+}
+.text{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:5%;
+}
+.text1{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:3%;
+    margin-top:4%;
+}
+.text2{
+    font-family: roboto;
+    font-style:bold;
+    font-weight:900;
+    color:white;
+    font-size: 20px;
+    margin-left:1%;
+}
+
+    
+    }
+
 /*desktop version...................*/
+@media screen and (min-width:930px){
+
 .fa-arrow-left{
     font-size:34px;
     color:black;
@@ -111,6 +1015,10 @@ a{
     position:relative;
     bottom:110%;
   }
+  .animatedheart:focus,
+  .animatedheart:hover .dupheart{
+    visibility: hidden;
+  }
 .menuhead{
     width:70%;
     font-family: shrikhand;
@@ -181,23 +1089,29 @@ a{
     margin-right:4%;
     margin-bottom:4%;
     border-radius:15px;
-    border:2px solid #f2f2f2;
+    border:2px solid black;
+    background-color: yellow;
 }
  .card .main{
     width:100%;
     height:70px;
     display: flex;
     flex-direction: column;
-    border:2px solid #f2f2f2;
+    border:2px solid blue;
     background-color: white;
     border-radius: 15px;
     padding-left:3%;
     margin-bottom:-20%;
     
+    
 }
-.main .maindup{
+.card:focus
+.card:hover .main{
+    display:none;
+}
+.card .main .maindup{
 width:100%;
-height:70px;
+height:100%;
 display: flex;
 flex-direction: column;
 background-color: white;
@@ -206,12 +1120,12 @@ padding-left:3%;
 margin-bottom:-20%;
 position:relative;
 bottom:95%;
-right:3%;
 visibility:hidden;
+border:2px solid red;
 
 }
-.main:focus,
-.main:hover .maindup{
+.card:focus,
+.card:hover .maindup{
     visibility:visible;
 }
 .secondline{
@@ -229,16 +1143,16 @@ visibility:hidden;
 }
 
 /*chekbutton...*/
-.checkmark{
+.card .checkmark{
     background-color: white;
     border:2px solid #99e2d0;
-    width:8%;
-    height:23px;
-    border-radius: 90px;
+    width:25px;
+    height:25px;
+    border-radius:50%;
     padding-top:2px;
     position:relative;
     left:65%;
-    top:30%;
+    top:35%;
     visibility: hidden;
     }
 .card:hover .checkmark{
@@ -251,7 +1165,7 @@ visibility:hidden;
 }
 .card .checkbtni{
     width:20%;
-    height:70px;
+    height:100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color:#99e2d0;
@@ -399,484 +1313,4 @@ a{
     font-size: 20px;
     margin-left:1%;
 }
-@keyframes slideme{
-    0%{
-      transform: translateX(100px);
-    }
-  }
-  @keyframes rotating{
-      0%{
-  
-          transform:rotate(0deg);
-      }
-      100%{
-          transform:rotate(360deg);
-      }
-  }
-  @keyframes menudisplay{
-      0%{
-        transform: translateY(10px);
-        opacity: 0.5;
-      }
-      100%{
-        opacity:1;
-      }
-      
-    }
-    @keyframes heart {
-      0%{
-          transform: scaleY(0.09);
-          
-      }
-      10%{
-          transform: scaleY(.18);
-      }
-      40%{
-          transform: scaleY(.40);
-      }
-      80%{
-          transform: scaleY(.81);
-      }
-      100%{
-          transform: scaleY(1);
-      }
-      
-  }
-/*Menu Page 1*/
-@media screen and (min-width:320px) and (max-width:750px){
-
-.fa-arrow-left{
-    font-size:23px;
-    color:black;
 }
-.arrow{
-    position:relative;
-    left:95%;
-    top:25%;
-
-}
-
-.logo{
-    width:70%;
-    position: relative;
-    left:15%;
-    bottom:3%;
-    padding-left:10%;
-}
-.logoimg{
-    width:70%;
-    object-fit: fill;
-}
-.menu1img{
-    width:100%;
-    height:250px;
-    margin-top:-1%;
-    position:relative;
-    left:0;
-}
-.mimg1{
-    width:100%;
-    height:200px;
-    object-fit: fill;
-}
-.homebutton{
-    display:flex;
-    flex-direction: row;
-    padding-top:0%;
-    padding-bottom:0%;
-}
-/* menu image container*/
-.typedish{
-    width:100%;
-    margin:0%;
-}
-.block2{
-    width:100%;
-    display:flex;
-    flex-direction: row;
-}
-
-
-.menu1img{
-    width:100%;
-    height:250px;
-    margin-top:-1%;
-    position:relative;
-    left:0;
-}
-.mimg1{
-    width:100%;
-    height:300px;
-    object-fit: fill;
-}
-/* menu container*/
-.fa-heart{
-    color:mediumorchid;
-    opacity:0.7;
-    font-size:25px;
-
-}
-
-.far{
-    color:black;
-    font-size: 26px;
-}
-.animatedheart{
-    width:10%;
-    /*height:25px;*/
-    margin-top:2%;
-  }
-  .animatedheart .mainheart{
-    width:100%;
-    height:25px;
-    visibility:hidden;
-   /* border:2px solid green;*/
-  }
-  .animatedheart:focus,
-  .animatedheart:hover .mainheart{
-    visibility: visible;
-    animation:heart 1s;
-  }
-   .dupheart{
-    width:100%;
-    height:25px;
-    /*border:2px solid black;*/
-    position:relative;
-    bottom:112%;
-  }
-.menuhead{
-    width:69%;
-    font-family: shrikhand;
-    font-size:25px;
-    font-weight:700;
-    margin-left: 7%;
-    margin-right: 5%;
-    margin-bottom:0%;
-
-}
-.menubox{
-    width:100%;
-    background-color:#f2f2f2;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    position:relative;
-    top:35%;
-    padding-top:10%;
-    /*padding-left: 3%;
-    padding-right:4%;*/
-    padding-bottom:25%;
-    display:flex;
-    flex-direction: column;
-}
-.sideh{
-    width:10%;
-    font-size:14px;
-    color:black;
-    margin-left:7%;
-    margin-top:10%;
-    margin-bottom:5%;
-    border-bottom:3px solid #99e2d0;
-}
-.sideh2{
-    width:10%;
-    white-space:nowrap ;
-    font-size:14px;
-    color:black;
-    margin-left:7%;
-    margin-top:10%;
-    margin-bottom:5%;
-    display:flex;
-    flex-flow:row wrap;
-    border-bottom:3px solid #99e2d0;
-    overflow:visible;
-}
-/*starter menu buttons*/
-.starline1{
-    width:100%;
-    height:40%;
-    font-family: roboto;
-    font-size:16px;
-    font-weight:600;
-}
-.starline2{
-    width:85%;
-    font-size:15px;
-}
-.starline3{
-    width:15%;
-    font-weight: 600;
-}
-
-.card{
-    width:90%;
-    height:75px;
-    display:flex;
-    flex-flow:row wrap;
-    margin-left:4%;
-    margin-right:4%;
-    margin-bottom:4%;
-    border-radius:15px;
-    border:2px solid #f2f2f2;
-}
- .card .main{
-    width:100%;
-    height:70px;
-    display: flex;
-    flex-direction: column;
-    border:2px solid #f2f2f2;
-    background-color: white;
-    border-radius: 15px;
-    padding-left:3%;
-    margin-bottom:-20%;
-    
-}
-.main .maindup{
-width:100%;
-height:70px;
-display: flex;
-flex-direction: column;
-background-color: white;
-border-radius: 15px;
-padding-left:3%;
-margin-bottom:-20%;
-position:relative;
-bottom:95%;
-right:3%;
-visibility:hidden;
-
-}
-.main:focus,
-.main:hover .maindup{
-    visibility:visible;
-}
-.secondline{
-    width:100%;
-    height:40%;
-    display:flex;
-    margin-top:-5%;
-    margin-bottom:3%;
-}
-.secondlinedup{
-    width:80%;
-    display:flex;
-    margin-top:-5%;
-    margin-bottom:3%;
-}
-
-/*chekbutton...*/
-.checkmark{
-    background-color: white;
-    border:2px solid #99e2d0;
-    width:8%;
-    height:23px;
-    border-radius: 90px;
-    padding-top:2px;
-    position:relative;
-    left:65%;
-    top:30%;
-    visibility: hidden;
-    }
-.card:hover .checkmark{
-    visibility: visible;
-    animation:rotating 2s,slideme 1s;
-
-}
- .fa-check{
-    color:#99e2d0;
-}
-.card .checkbtni{
-    width:20%;
-    height:100%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color:#99e2d0;
-    padding-top:6%;
-    padding-left:7%;
-    margin-top:5%;
-    position:relative;
-    left:80%;
-    bottom:25%;
-  visibility:hidden;
-}
-.card:hover .checkbtni{
-    visibility: visible;
-    animation:slideme 1s; 
-}
-a.btn2{
-    display:flex;
-    width: 60%;
-    height: 60px;
-    border-width: thin;
-    border: 1px solid lightgray;
-    background-image:linear-gradient(to top,#9356dc, #FF79DA);
-    border-radius: 50px;
-    padding-left:22%;
-    padding-right:22%;
-    padding-top:5%;
-    text-decoration: none;
-    font-family:roboto;
-    font-weight:400;
-    font-size:18px;
-    color:white;
-    margin-left:20%;
-    margin-right:20%;
-    margin-top:10%;
-}
-/*menu animation*/
-#s1{
-    animation:menudisplay 2s;
-    animation-delay: 333ms;
-}
-#s2{
-    animation:menudisplay 2s;
-    animation-delay: 666ms;
-}
-#s3{
-    animation:menudisplay 2s;
-    animation-delay: 999ms;
-}
-#m1{
-    animation:menudisplay 2s;
-    animation-delay: 1332ms;
-}
-#m2{
-    animation:menudisplay 2s;
-    animation-delay: 1665ms;
-}
-#m3{
-    animation:menudisplay 2s;
-    animation-delay: 1998ms;
-}
-#d1{
-    animation:menudisplay 2s;
-    animation-delay: 2331ms;
-}
-#d2{
-    animation:menudisplay 2s;
-    animation-delay: 2664ms;
-}
-#d3{
-    animation:menudisplay 2s;
-    animation-delay: 2997ms;
-}
-
-/*footer section*/
-.one{
-    font-family: shrikhand;
-    font-style: bold;
-    font-weight: 900;
-    font-size:30px;
-    color:white;
-    text-decoration: none;
-}
-.hed{
-    width:100%;
-    padding-left:0%;
-    padding-right: 0%;
-}
-.fl1{
-    width:100%;
-    padding-top:0%;
-}
-.fl2{
-    width:100%;
-}
-.last{
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    margin-top:0%;
-    background-color: black;
-    opacity: 0.7;
-    padding-left:8%;
-    padding-top:2%;
-    padding-bottom: 4%;
-}
-a{
-    display: block;
-}
-.fa-cutlery{
-    font-size:20px;
-    color:white;
-}
-.fa-handshake{
-    font-size:20px;
-    color:white;
-     transform: rotate(130deg);
-     margin-top:8%;
-}
-.text{
-    font-family: roboto;
-    font-style:bold;
-    font-weight:900;
-    color:white;
-    font-size: 20px;
-    margin-left:5%;
-}
-.text1{
-    font-family: roboto;
-    font-style:bold;
-    font-weight:900;
-    color:white;
-    font-size: 20px;
-    margin-left:3%;
-    margin-top:4%;
-}
-.text2{
-    font-family: roboto;
-    font-style:bold;
-    font-weight:900;
-    color:white;
-    font-size: 20px;
-    margin-left:1%;
-}
-.fl3{
-    width:30%;
-    height:auto;
-    margin-top:-5%;
-}
-@keyframes slideme{
-  0%{
-    transform: translateX(100px);
-  }
-}
-@keyframes rotating{
-    0%{
-
-        transform:rotate(0deg);
-    }
-    100%{
-        transform:rotate(360deg);
-    }
-}
-@keyframes menudisplay{
-    0%{
-      transform: translateY(10px);
-      opacity: 0.5;
-    }
-    100%{
-      opacity:1;
-    }
-    
-  }
-  @keyframes heart {
-    0%{
-        transform: scaleY(0.09);
-        
-    }
-    10%{
-        transform: scaleY(.18);
-    }
-    40%{
-        transform: scaleY(.40);
-    }
-    80%{
-        transform: scaleY(.81);
-    }
-    100%{
-        transform: scaleY(1);
-    }
-    
-}
-}
-/*desktop version.................................................*/
