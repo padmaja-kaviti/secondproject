@@ -334,7 +334,7 @@ body::-webkit-scrollbar{
     .line1{
         width:50%;
         font-family:roboto;
-        font-style: bold;
+        font-weight: bold;
         font-weight:700;
         font-size:14px;
         color:black;
@@ -373,7 +373,7 @@ body::-webkit-scrollbar{
         gap:70%;
     }
     .fa-heart{
-        color:mediumorchid;
+       color:mediumorchid;    
         font-size:22px;
     
     }
@@ -395,6 +395,9 @@ body::-webkit-scrollbar{
       .animatedheart:hover .mainheart{
         visibility: visible;
         animation:heart 1s;
+        -webkit-background-clip:text;
+        background-image:linear-gradient(to top,#9356dc, #FF79DA);
+        -webkit-text-fill-color: transparent;
       }
        .dupheart{
         width:100%;
@@ -436,7 +439,7 @@ body::-webkit-scrollbar{
 /*footer section*/
 .one{
     font-family: shrikhand;
-    font-style: bold;
+    font-weight: bold;
     font-weight: 900;
     font-size:30px;
     color:white;
@@ -452,6 +455,15 @@ body::-webkit-scrollbar{
 }
 .fl2{
     width:100%;
+    margin-top: 0%;
+}
+.fl3{
+    width:100%;
+    margin-top:0%;
+}
+.fl4{
+    width:100%;
+    margin-top: -3%;
 }
 .last{
     display: flex;
@@ -482,7 +494,7 @@ a{
 }
 .text{
     font-family: roboto;
-    font-style:bold;
+    font-weight:bold;
     font-weight:900;
     color:white;
     font-size: 20px;
@@ -490,7 +502,7 @@ a{
 }
 .text1{
     font-family: roboto;
-    font-style:bold;
+    font-weight:bold;
     font-weight:900;
     color:white;
     font-size: 20px;
@@ -499,16 +511,11 @@ a{
 }
 .text2{
     font-family: roboto;
-    font-style:bold;
+    font-weight:bold;
     font-weight:900;
     color:white;
     font-size: 20px;
     margin-left:1%;
-}
-.fl3{
-    width:30%;
-    height:auto;
-    margin-top:-5%;
 }
 
 @keyframes heart {
@@ -703,31 +710,31 @@ a{
     .fa-circle{
         color:#9356DC;
         font-size:24px;
-        margin-left:-8%;
+        margin-left:-10%;
         position:relative;
-        bottom:85%;
+        bottom:25px;
         left:25%;
     }
     .fa-1{
         position:relative;
-        left:75%;
-        bottom:95%;
+        left:70%;
+        bottom:30px;
         color:white;
         font-size:12px;
         z-index:10;
     }
     .fa-2{
         position:relative;
-        left:75%;
-        bottom:95%;
+        left:70%;
+        bottom:28px;
         color:white;
         font-size:12px;
         z-index:11;
     }
     .fa-3{
         position:relative;
-        left:75%;
-        bottom:95%;
+        left:70%;
+        bottom:29px;
         color:white;
         font-size:12px;
         z-index:12;
@@ -736,6 +743,8 @@ a{
         font-size:16px;
         color:gray;
         text-decoration: none;
+        position:relative;
+        bottom:24px;
 
     }
     .filters:focus,
@@ -744,6 +753,8 @@ a{
     }
     .fa-bars{
         color:gray;
+        position:relative;
+        bottom:25px;
     }
     .filters:focus,
     .filters:hover .fa-bars{
@@ -752,6 +763,8 @@ a{
     .fa-store{
         font-size:16px;
         color:gray;
+        position:relative;
+        bottom:25px;
     }
     .filters:focus,
     .filters:active,
@@ -763,9 +776,11 @@ a{
         font-weight:500;
         font-size:14px;
         color:black;
+        position:relative;
+        bottom:25px;
     }
     .circle-num{
-        margin-left:-5%;
+        margin-left:-6%;
     }
     .how2{
         display:flex;
@@ -809,7 +824,7 @@ a{
     .line1{
         width:50%;
         font-family:roboto;
-        font-style: bold;
+        font-weight: bold;
         font-weight:700;
         font-size:14px;
         color:black;
@@ -870,6 +885,9 @@ a{
       .animatedheart:hover .mainheart{
         visibility: visible;
         animation:heart 1s;
+        -webkit-background-clip:text;
+        background-image:linear-gradient(to top,#9356dc, #FF79DA);
+        -webkit-text-fill-color: transparent;
       }
        .dupheart{
         width:100%;
@@ -913,27 +931,48 @@ a{
 /*footer section*/
 .one{
     font-family: shrikhand;
-    font-style: bold;
+    font-weight: bold;
     font-weight: 900;
     font-size:30px;
     color:white;
-    text-decoration: none;
+}
+.hed{
+    width:100%;
+    padding-left:0%;
+    padding-right: 0%;
+}
+.fl1{
+    width:100%;
+    padding-top:0%;
+}
+.fl2{
+    width:100%;
+    margin-top: -5%;
+}
+.fl3{
+    width:100%;
+    margin-top:0%;
+}
+.fl4{
+    width:100%;
+    margin-top: -3%;
 }
 .last{
+    display: flex;
+    flex-direction: column;
     width:100%;
-    margin-top:15%;
+    margin-top:0%;
     background-color: black;
     opacity: 0.7;
     padding-left:8%;
     padding-top:2%;
     padding-bottom: 4%;
+    text-decoration: none;
+    margin-top: 15%;
 }
 a{
     display: block;
-}
-.final{
     text-decoration: none;
-    
 }
 .fa-cutlery{
     font-size:20px;
@@ -947,18 +986,15 @@ a{
 }
 .text{
     font-family: roboto;
-    font-style:bold;
+    font-weight:bold;
     font-weight:900;
     color:white;
     font-size: 20px;
     margin-left:5%;
 }
-.setline2{
-    margin-top:-5%;
-}
 .text1{
     font-family: roboto;
-    font-style:bold;
+    font-weight:bold;
     font-weight:900;
     color:white;
     font-size: 20px;
@@ -967,13 +1003,12 @@ a{
 }
 .text2{
     font-family: roboto;
-    font-style:bold;
+    font-weight:bold;
     font-weight:900;
     color:white;
     font-size: 20px;
     margin-left:1%;
 }
-
    
 } 
 /* .............desktop.............................*/
@@ -1111,9 +1146,9 @@ a{
         margin-left:38%;
         margin-right:  30%;
     }
-    a.btn:focus{
-        opacity:0.8;
-        box-shadow: 5px 5px 5px #99e2d0;
+    a.btn:hover{
+        opacity:0.9;
+        filter:drop-shadow (5px 5px 5px #043d2f);
     }
     .book-block{
         width:100%;
@@ -1130,13 +1165,13 @@ a{
         margin-left: 10%;
     }
     .filters{
-        width:25%;
+        width:30%;
         height:70px;
         border-radius:30px;
         border:2px solid #f2f2f2;
         background-color: #f2f2f2;
         display:flex;
-        gap:8%;
+        gap:6%;
         text-decoration: none;
         padding-top:6%;
         margin-left:5%;
@@ -1156,10 +1191,11 @@ a{
         font-size:24px;
         margin-left:-8%;
         position:relative;
+        bottom:50px;
     }
     .fa-1{
         position:relative;
-        bottom:5px;
+        bottom:55px;
         z-index:10;
         left:50%;
         color:white;
@@ -1167,7 +1203,7 @@ a{
     }
     .fa-2{
         position:relative;
-        bottom:6px;
+        bottom:55px;
         left:50%;
         color:white;
         font-size:12px;
@@ -1175,7 +1211,7 @@ a{
     }
     .fa-3{
         position:relative;
-        bottom:6px;
+        bottom:55px;
         z-index:12;
         left:50%;
         color:white;
@@ -1187,6 +1223,7 @@ a{
         text-decoration: none;
         position:relative;
         bottom:50px;
+        margin-left:4%;
     }
     .filters:focus,
     .filters:hover .fa-mobile-screen-button{
@@ -1219,11 +1256,10 @@ a{
         position:relative;
         bottom:50px;
         color:black;
+        margin-left:0%;
     
     }
     .circle-num{
-        position:relative;
-        bottom:55px;
         margin-left:-5%;
     }
     .how2{
@@ -1271,7 +1307,7 @@ a{
     .line1{
         width:80%;
         font-family:roboto;
-        font-style: bold;
+        font-weight: bold;
         font-weight:700;
         font-size:14px;
         color:black;
@@ -1335,6 +1371,9 @@ a{
       .animatedheart:hover .mainheart{
         visibility: visible;
         animation:heart 1s;
+        -webkit-background-clip:text;
+        background-image:linear-gradient(to top,#9356dc, #FF79DA);
+        -webkit-text-fill-color: transparent;
       }
        .dupheart{
         width:100%;
@@ -1379,7 +1418,7 @@ a{
      .one{
         width:20%;
         font-family: shrikhand;
-        font-style: bold;
+        font-weight: bold;
         font-weight: 900;
         font-size:30px;
         color:white;
@@ -1387,21 +1426,44 @@ a{
     }
     .hed{
         width:100%;
-        padding-left:0%;
+        padding-left:35%;
         padding-right:0%;
+        font-family: shrikhand;
+        font-weight: bold;
+        font-weight: 900;
+        font-size:30px;
+        color:white;
+        text-decoration: none;
+        margin-bottom: 3%;
     }
     .fl1{
-        width:20%;
-        padding-top:1%;
+        width:25%;
+        padding-top:1.5%;
     }
     .fl2{
-        width:20%;
+        width:25%;
     }
     .fl3{
-        width:20%;
-        height:4%;
-        padding-top:5%;
-        margin-left:-10%;
+        width:10%;
+        font-family: roboto;
+        font-weight:bold;
+        font-weight:900;
+        color:white;
+        font-size: 20px;
+        text-decoration: none;
+        padding-top: 2%;
+        
+    }
+    .fl4{
+        width:10%;
+        padding-top: 5%; 
+        font-family: roboto;
+        font-weight:bold;
+        font-weight:900;
+        color:white;
+        font-size: 20px;
+        text-decoration: none;
+        
     }
     .last{
         display:flex;
@@ -1414,7 +1476,7 @@ a{
         padding-top:2%;
         padding-bottom: 4%;
         text-decoration: none;
-        gap:4%;
+        gap:3%;
     }
     a{
         display: block;
@@ -1431,7 +1493,7 @@ a{
     }
     .text{
         font-family: roboto;
-        font-style:bold;
+        font-weight:bold;
         font-weight:900;
         color:white;
         font-size: 20px;
@@ -1439,7 +1501,7 @@ a{
     }
     .text1{
         font-family: roboto;
-        font-style:bold;
+        font-weight:bold;
         font-weight:900;
         color:white;
         font-size: 20px;
@@ -1448,10 +1510,10 @@ a{
     }
     .text2{
         font-family: roboto;
-        font-style:bold;
+        font-weight:bold;
         font-weight:900;
         color:white;
         font-size: 20px;
-        margin-left:1%;
+        text-decoration: none;
     }
 }
