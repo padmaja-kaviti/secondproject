@@ -328,6 +328,16 @@ visibility:hidden;
 .card:hover .checkbtni{
     visibility: visible;
     animation:slideme 1s; 
+}/* order button */
+.para3{
+    width:95%;
+    font-family:roboto;
+    font-weight:400;
+    font-size:18px;
+    color:white;
+    border:2px solid white;
+    text-decoration: none;
+    text-align: center;
 }
 a.btn2{
     display:flex;
@@ -1254,14 +1264,14 @@ a.btn2{
     padding-right: 20%;
 }
 .fl1{
-    width:20%;
+    width:25%;
     padding-top:1%;
 }
 .fl2{
-    width:20%;
+    width:25%;
 }
 .fl3{
-    width:20%;
+    width:10%;
 }
 .last{
     display:flex;
