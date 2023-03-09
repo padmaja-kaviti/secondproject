@@ -21,7 +21,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     background:#333333;
     z-index: 9999;
-   animation:loadingmain 4s ease ;
+   animation:loadingmain 2s ease ;
    transform: translate(-100vw,-100vh);
 }
 .loader::before{
@@ -545,7 +545,7 @@ a{
     
 }
 /* .............IPAD.............................*/
-@media screen and (min-width:751px) and (max-width:950px){
+@media screen and (min-width:751px) and (max-width:989px){
     .header{
         width:100%;
         padding-left: 10%;
@@ -1028,7 +1028,7 @@ a{
    
 } 
 /* .............desktop.............................*/
-@media screen and (min-width:950px){
+@media screen and (min-width:990px){
     .header{
         width:100%;
         padding-left: 10%;
@@ -1109,8 +1109,8 @@ a{
         width:80%;
         /*padding-left:17%; */
         margin-bottom:3%;
-        margin-left: 8%;
-        margin-right: 12%;
+        margin-left: 11%;
+        margin-right: 9%;
         text-align: center;
     }
     .para2{
@@ -1119,8 +1119,8 @@ a{
         font-size:22px;
         color:grey;
         text-align:center;
-        margin-left:8%;
-        margin-right:12%;
+        margin-left:11%;
+        margin-right:9%;
         margin-bottom:-20px;
     }
     .para2-1{
@@ -1129,8 +1129,8 @@ a{
         font-size:22px;
         color:grey;
         text-align:center;
-        margin-left:8%;
-        margin-right:12%;
+        margin-left:11%;
+        margin-right:9%;
         margin-bottom:4%;
     }
     /*button*/
@@ -1277,6 +1277,7 @@ a{
     .how2{
         display:flex;
         flex-direction:row;
+        padding-right:2%;
     }
 
 
