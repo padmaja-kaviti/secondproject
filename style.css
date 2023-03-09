@@ -31,7 +31,7 @@ body::-webkit-scrollbar{
     border:15px solid #dddddd;
     border-top-color:#009578;
     border-radius: 50%;
-    animation:loading 4s ease ;
+    animation:loading 2s ease ;
     
 }
 
@@ -140,12 +140,10 @@ body::-webkit-scrollbar{
         font-weight: 900;
         font-size:25px;
         width:80%;
-        /*padding-left:17%; */
         margin-bottom:12%;
         margin-left: 8%;
         margin-right: 12%;
         text-align: center;
-        /*border:2px solid blue;*/
     }
     .para2{
         width:90%;
@@ -155,7 +153,6 @@ body::-webkit-scrollbar{
         text-align:center;
         margin-bottom:-20px;
         margin-left:2%;
-      /*  border:2px solid green; */
     }
     .para2-1{
         width:100%;
@@ -181,7 +178,6 @@ body::-webkit-scrollbar{
         width: 60%;
         height: 50px;
         border-width: thin;
-        /*border: 1px solid lightgray;*/
         background-image:linear-gradient(to top,#9356dc, #FF79DA);
         border-radius: 50px;
         align-items: center;
@@ -213,7 +209,6 @@ body::-webkit-scrollbar{
         width:80%;
         height:70px;
         border-radius:30px;
-        /*border:2px solid #f2f2f2;*/
         background-color: #f2f2f2;
         display:flex;
         gap:8%;
@@ -396,7 +391,7 @@ body::-webkit-scrollbar{
       .animatedheart:focus,
       .animatedheart:hover .mainheart{
         visibility: visible;
-        animation:heart 1s;
+        animation:heart 0.05s;
         -webkit-background-clip:text;
         background-image:linear-gradient(to bottom,#9356dc, #FF79DA);
         -webkit-text-fill-color: transparent;
@@ -439,13 +434,6 @@ body::-webkit-scrollbar{
     color:black;
 }
 /*footer section*/
-/*.one{
-    font-family: shrikhand;
-    font-weight: bold;
-    font-weight: 900;
-    font-size:30px;
-    color:white;
-}*/
 .hed{
     width:100%;
     padding-left:0%;
@@ -892,7 +880,7 @@ a{
       .animatedheart:focus,
       .animatedheart:hover .mainheart{
         visibility: visible;
-        animation:heart 1s;
+        animation:heart 0.05s;
         -webkit-background-clip:text;
         background-image:linear-gradient(to bottom,#9356dc, #FF79DA);
         -webkit-text-fill-color: transparent;
@@ -900,7 +888,6 @@ a{
        .dupheart{
         width:100%;
         height:25px;
-        /*border:2px solid black;*/
         position:relative;
         bottom:110%;
       }
@@ -937,13 +924,6 @@ a{
     color:black;
 }
 /*footer section*/
-/*.one{
-    font-family: shrikhand;
-    font-weight: bold;
-    font-weight: 900;
-    font-size:30px;
-    color:white;
-}*/
 .hed{
     width:100%;
     padding-left:0%;
@@ -1294,8 +1274,8 @@ a{
     }
     .lbel{
         position:relative;
-        bottom:125px;
-        left:70%;
+        bottom:110px;
+        left:75%;
         color:black;
         background-color: #99e2d0;
         padding:5px 20px 5px 20px;
@@ -1380,7 +1360,7 @@ a{
       .animatedheart:focus,
       .animatedheart:hover .mainheart{
         visibility: visible;
-        animation:heart 1s;
+        animation:heart 0.05s;
         -webkit-background-clip:text;
         background-image:linear-gradient(to bottom,#9356dc, #FF79DA);
         -webkit-text-fill-color: transparent;
@@ -1388,7 +1368,6 @@ a{
        .dupheart{
         width:100%;
         height:25px;
-        /*border:2px solid black;*/
         position:relative;
         bottom:110%;
       }
@@ -1419,21 +1398,11 @@ a{
     width:100%;
     display:flex;
     flex-direction:row;
-    /*border:2px solid green;*/
 }
 .fa-sharp .fa-regular .fa-heart{
     color:black;
 }
      /*-----------Footer-----------------*/
-    /* .one{
-        width:20%;
-        font-family: shrikhand;
-        font-weight: bold;
-        font-weight: 900;
-        font-size:30px;
-        color:white;
-        text-decoration: none;
-    }*/
     .hed{
         width:100%;
         padding-left:35%;
