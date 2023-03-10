@@ -1261,7 +1261,6 @@ visibility:hidden;
 .card:focus,
 .card:hover .maindup{
     visibility:visible;
-    /*animation:slidemain 0.5s 0.1s;*/
    
 }
 /*.............extra text cards............*/
@@ -1283,7 +1282,6 @@ visibility:hidden;
     .card:focus,
     .card:hover .maindupextra{
         visibility:visible;
-        animation:slideme 0.3s;
     }
     .card  .checkbtniextra{
         width:20%;
@@ -1334,7 +1332,7 @@ visibility:hidden;
     }
 .card:hover .checkmark{
     visibility: visible;
-    animation:rotating 2s,slideme 0.3s;
+    animation:rotating 1s,slideme 0.3s;
 
 }
  .fa-check{
