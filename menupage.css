@@ -21,6 +21,11 @@ a{
       transform: translateX(100px);
     }
   }
+  @keyframes slidemain{
+    0%{
+      transform: translateX(2px);
+    }
+  }
   @keyframes rotating{
       0%{
   
@@ -349,7 +354,7 @@ visibility:hidden;
     }
 .card:hover .checkmark{
     visibility: visible;
-    animation:rotating 2s,slideme 1s;
+    animation:rotating 2s,slideme 0.3s;
 
 }
  .fa-check{
@@ -371,7 +376,7 @@ visibility:hidden;
 }
 .card:hover .checkbtni{
     visibility: visible;
-    animation:slideme 1s; 
+    animation:slideme 0.3s; 
 }
 /* order button */
 .para3{
@@ -655,7 +660,7 @@ a{
       .animatedheart:focus,
       .animatedheart:hover .mainheart{
         visibility: visible;
-        animation:heart 1s;
+        animation:heart 0.5s;
         -webkit-background-clip:text;
         background-image:linear-gradient(to bottom,#9356dc, #FF79DA);
         -webkit-text-fill-color: transparent;
@@ -700,7 +705,6 @@ a{
 {
     width:33%;
     margin:0%;
-    border:1px solid black;
 }
     .sideh{
         width:10%;
@@ -751,7 +755,7 @@ a{
         margin-bottom:10%;
         border-radius:15px;
         box-shadow:3px 3px 5px rgba(50.2%, 50.2% ,50.2% ,0.1);
-        border:2px solid red;
+    
     }
      .card .main{
         width:100%;
@@ -786,13 +790,11 @@ a{
     bottom:75%;
     right:5%;
     visibility:hidden;
-    border:2px solid black;
     
     }
     .card:focus,
     .card:hover .maindup{
         visibility:visible;
-        animation:slideme 0.5s;
     }
     /*...........extra text cards......*/
     .card .main .maindupextra{
@@ -808,13 +810,12 @@ a{
         bottom:88%;
         right:5%;
         visibility:hidden;
-        border:2px solid black;
+
         
         }
         .card:focus,
         .card:hover .maindupextra{
             visibility:visible;
-            animation:slideme 0.5s;
         }
         .card .checkbtniextra{
             width:20%;
@@ -832,7 +833,7 @@ a{
         }
         .card:hover .checkbtniextra{
             visibility: visible;
-            animation:slideme 1s; 
+            animation:slideme 0.3s; 
         }
         /*.......................................*/
     .secondline{
@@ -845,7 +846,7 @@ a{
     .secondlinedup{
         width:80%;
         display:flex;
-        margin-top:-3%;
+        margin-top:-1%;
         margin-bottom:3%;
     }
     
@@ -856,15 +857,15 @@ a{
         width:25px;
         height:25px;
         border-radius:50%;
-        padding-top:2px;
+        padding-top: 2px;
         position:relative;
         left:65%;
-        bottom:5%;
+        bottom:15px;
         visibility: hidden;
         }
     .card:hover .checkmark{
         visibility: visible;
-        animation:rotating 2s,slideme 1s;
+        animation:rotating 1s,slideme 0.3s;
     
     }
      .fa-check{
@@ -881,12 +882,12 @@ a{
         margin-top:5%;
         position:relative;
         left:80%;
-        bottom:59%;
+        bottom:62%;
       visibility:hidden;
     }
     .card:hover .checkbtni{
         visibility: visible;
-        animation:slideme 1s; 
+        animation:slideme 0.3s; 
     }
     /* ............button........*/
     .para3{
@@ -982,10 +983,12 @@ a{
     .fl3{
         width:100%;
         margin-top:3%;
+        margin-left:-1%;
     }
     .fl4{
         width:100%;
         margin-top: 3%;
+        margin-left:-1.5%;
     }
     .last{
         display: flex;
@@ -1133,7 +1136,7 @@ a{
   .animatedheart:focus,
   .animatedheart:hover .mainheart{
     visibility: visible;
-    animation:heart 0.5s;
+    animation:heart 0.3s;
     -webkit-background-clip:text;
     background-image:linear-gradient(to top,#9356dc, #FF79DA);
     -webkit-text-fill-color: transparent;
@@ -1258,7 +1261,8 @@ visibility:hidden;
 .card:focus,
 .card:hover .maindup{
     visibility:visible;
-    animation:slideme 0.5s;
+    /*animation:slidemain 0.5s 0.1s;*/
+   
 }
 /*.............extra text cards............*/
 .card .main .maindupextra{
@@ -1279,7 +1283,7 @@ visibility:hidden;
     .card:focus,
     .card:hover .maindupextra{
         visibility:visible;
-        animation:slideme 0.5s;
+        animation:slideme 0.3s;
     }
     .card  .checkbtniextra{
         width:20%;
@@ -1297,7 +1301,7 @@ visibility:hidden;
     }
     .card:hover .checkbtniextra{
         visibility: visible;
-        animation:slideme 1s; 
+        animation:slideme 0.1s 0.1s; 
     }
     /*...............................................*/
 .secondline{
@@ -1308,9 +1312,10 @@ visibility:hidden;
     margin-bottom:3%;
 }
 .secondlinedup{
-    width:80%;
+    width:85%;
+    height:40%;
     display:flex;
-    margin-top:-5%;
+    margin-top:-3%;
     margin-bottom:3%;
 }
 
@@ -1329,7 +1334,7 @@ visibility:hidden;
     }
 .card:hover .checkmark{
     visibility: visible;
-    animation:rotating 2s,slideme 1s;
+    animation:rotating 2s,slideme 0.3s;
 
 }
  .fa-check{
@@ -1351,7 +1356,7 @@ visibility:hidden;
 }
 .card:hover .checkbtni{
     visibility: visible;
-    animation:slideme 1s; 
+    animation:slideme 0.3s; 
 }
 /*...........orderbutton..........*/
 .para3{
