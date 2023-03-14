@@ -188,7 +188,7 @@ body::-webkit-scrollbar{
         box-shadow:5px 5px 5px rgba(50.2%, 50.2% ,50.2% ,0.1);
     }
     a.btn:focus{
-        filter:brightness(120%);
+        filter:brightness(110%);
         box-shadow:5px 5px gray;
     }
     .book-block{
@@ -392,6 +392,7 @@ body::-webkit-scrollbar{
       .animatedheart:hover .mainheart{
         visibility: visible;
         animation:heart 0.05s;
+        background-clip: text;
         -webkit-background-clip:text;
         background-image:linear-gradient(to bottom,#9356dc, #FF79DA);
         -webkit-text-fill-color: transparent;
@@ -653,7 +654,6 @@ a{
         width: 35%;
         height: 60px;
         border-width: thin;
-        border: 1px solid lightgray;
         background-image:linear-gradient(to top,#9356dc, #FF79DA);
         border-radius: 50px;
         align-items: center;
@@ -664,7 +664,7 @@ a{
         box-shadow:5px 5px 5px rgba(50.2%, 50.2% ,50.2% ,0.2);
     }
     a.btn:focus{
-        filter:brightness(120%);
+        filter:brightness(110%);
         box-shadow: 5px 5px gray;
     }
     .book-block{
@@ -685,7 +685,6 @@ a{
         width:50%;
         height:70px;
         border-radius:30px;
-        /*border:2px solid #f2f2f2; */
         background-color: #f2f2f2;
         display:flex;
         gap:8%;
@@ -881,6 +880,7 @@ a{
       .animatedheart:hover .mainheart{
         visibility: visible;
         animation:heart 0.05s;
+        background-clip: text;
         -webkit-background-clip:text;
         background-image:linear-gradient(to bottom,#9356dc, #FF79DA);
         -webkit-text-fill-color: transparent;
@@ -1128,7 +1128,6 @@ a{
         width: 25%;
         height: 60px;
         border-width: thin;
-        border: 1px solid lightgray;
         background-image:linear-gradient(to top,#9356dc, #FF79DA);
         border-radius: 50px;
         align-items: center;
@@ -1139,7 +1138,7 @@ a{
         box-shadow:5px 5px 5px rgba(50.2%, 50.2% ,50.2% ,0.2);
     }
     a.btn:hover{
-        filter:brightness(120%);
+        filter:brightness(110%);
         box-shadow:5px 5px 5px gray;
     }
     .book-block{
@@ -1361,6 +1360,7 @@ a{
       .animatedheart:hover .mainheart{
         visibility: visible;
         animation:heart 0.05s;
+        background-clip: text;
         -webkit-background-clip:text;
         background-image:linear-gradient(to bottom,#9356dc, #FF79DA);
         -webkit-text-fill-color: transparent;
