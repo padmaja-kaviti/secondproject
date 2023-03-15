@@ -133,6 +133,7 @@ body::-webkit-scrollbar{
         border-top:3px solid rgba(50.2%, 50.2% ,50.2% ,0.1);
         padding-top:10px;
         padding-bottom:10px;
+        border-bottom:5px solid lightgray;
     }
     /* booking text block*/
     .para1{
@@ -604,6 +605,7 @@ a{
         border-top:3px solid rgba(50.2%, 50.2% ,50.2% ,0.1);
         padding-top:10px;
         padding-bottom:10px;
+        border-bottom: 5px solid lightgray;
     }
     /* booking text block*/
     .para1{
@@ -1080,6 +1082,7 @@ a{
         border-top:3px solid rgba(50.2%, 50.2% ,50.2% ,0.1);
         padding-top:10px;
         padding-bottom:10px;
+        border-bottom: 5px solid lightgray;
     }
     /* booking text block*/
     .para1{

@@ -436,6 +436,10 @@ a {
         animation: menudisplay 2s;
         animation-delay: 999ms;
     }
+    #s4 {
+        animation: menudisplay 2s;
+        animation-delay: 999ms;
+    }
 
     #m1 {
         animation: menudisplay 2s;
@@ -920,6 +924,10 @@ a {
         animation: menudisplay 3s;
         animation-delay: 999ms;
     }
+    #s4 {
+        animation: menudisplay 3s;
+        animation-delay: 999ms;
+    }
 
     #m1 {
         animation: menudisplay 3s;
@@ -1396,6 +1404,10 @@ a {
     }
 
     #s3 {
+        animation: menudisplay 3s;
+        animation-delay: 999ms;
+    }
+    #s4 {
         animation: menudisplay 3s;
         animation-delay: 999ms;
     }
