@@ -699,33 +699,37 @@ a {
         padding-top: 10%;
         padding-bottom: 5%;
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: column;
+       /* flex-flow: row wrap; */
 
     }
 
     .typedish1{
-        width: 33%;
-        margin: 0%;
+        width: 80%;
+        margin-left:9%;
+        margin-right: 9%;
         animation: menuhide 1s;
 
     }
 
     .typedish2{
-        width: 33%;
-        margin: 0%;
+        width: 80%;
+        margin-left:9%;
+        margin-right: 9%;
         animation: menuhide 2s;
 
     }
 
     .typedish3{
-        width: 33%;
-        margin: 0%;
+        width: 80%;
+        margin-left:9%;
+        margin-right: 9%;
         animation: menuhide 3s;
 
     }
 
     .sideh {
-        width: 10%;
+        width: 5%;
         font-size: 14px;
         color: black;
         margin-left: 7%;
@@ -735,7 +739,7 @@ a {
     }
 
     .sideh2 {
-        width: 10%;
+        width: 8%;
         white-space: nowrap;
         font-size: 14px;
         color: black;
@@ -753,7 +757,7 @@ a {
         width: 100%;
         height: 40%;
         font-family: roboto;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 600;
     }
 
@@ -774,7 +778,7 @@ a {
         flex-flow: row wrap;
         margin-left: 4%;
         margin-right: 4%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         border-radius: 15px;
         box-shadow: 3px 3px 5px rgba(50.2%, 50.2%, 50.2%, 0.1);
 
@@ -831,8 +835,8 @@ a {
         border-radius: 50%;
         padding-top: 2px;
         position: relative;
-        left: 65%;
-        bottom: 15px;
+        left: 67%;
+        top:30px;
         visibility: hidden;
     }
 
@@ -857,7 +861,7 @@ a {
         margin-top: 5%;
         position: relative;
         left: 80%;
-        bottom: 62%;
+        bottom: 31%;
         visibility: hidden;
     }
 
