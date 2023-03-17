@@ -306,7 +306,7 @@ body::-webkit-scrollbar{
     }
     .lbel{
         position:relative;
-        bottom:75%;
+        bottom:105px;
         left:75%;
         color:black;
         background-color: #99e2d0;
